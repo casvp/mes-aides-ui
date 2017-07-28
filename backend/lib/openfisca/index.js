@@ -49,12 +49,12 @@ function sendOpenfiscaRequest(simulation, callback) {
     request.end();
 }
 
-var buildOpenFiscaRequest = exports.buildOpenFiscaRequest = mapping.buildOpenFiscaRequest;
+exports.buildOpenFiscaRequest = mapping.buildOpenFiscaRequest;
 
 function calculate(situation, callback) {
     var request;
     try {
-        request = buildOpenFiscaRequest(situation);
+        request = mapping.buildOpenFiscaRequest(situation);
     } catch(e) {
         return callback({
             message: e.message,
