@@ -34,12 +34,27 @@ angular.module('ddsApp').controller('FoyerIndividuFormCtrl', function($scope, in
         }
     ];
 
+    $scope.tauxIncapaciteOptions = [
+        {
+            value: 0.3,
+            label: 'Moins de 50%'
+        },
+        {
+            value: 0.7,
+            label: 'Entre 50% et 80%'
+        },
+        {
+            value: 0.9,
+            label: 'Plus de 80%'
+        }
+    ];
+
     var DEFAULT_INDIVIDU = {
         id: individuRole,
         nationalite: 'fr',
         ass_precondition_remplie: false,
         scolarite: 'Collège',
-        tauxIncapacite: 'plus80',
+        tauxIncapacite: 0.9,
         echelon_bourse: -1,
         enfant_a_charge: {},
         enfant_place: false,
