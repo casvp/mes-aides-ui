@@ -22,6 +22,13 @@ angular.module('ddsApp').controller('SuggestionCtrl', function($scope, droitsDes
         }
     }
     var droitsById = _.keyBy(droits, 'code');
+    var prefilledCode = 'aide_logement';
+    $scope.test.expectedResults.push({
+        expectedValue: 120.12,
+        ref: droitsById[prefilledCode],
+        result: 100,
+        shouldCompute: true,
+    });
 
     $scope.possibleValues = _.sortBy(droits, 'label');
 
@@ -57,6 +64,9 @@ angular.module('ddsApp').controller('SuggestionCtrl', function($scope, droitsDes
     }
 
     function getActualValue(droitId) {
+        if (! $scope.droits) {
+            return;
+        }
         var droit = droitsById[droitId];
         console.log(droitId, $scope.droits);
         var providerData = $scope.droits[droit.level];
