@@ -107,5 +107,24 @@ exports.buildOpenFiscaRequest = function(sourceSituation) {
 
     last3MonthsDuplication(testCase, situation.dateDeValeur);
 
+
+    _.forEach(testCase.individus, function(individu) {
+        delete individu.gir;
+        delete individu.perte_autonomie;
+        delete individu.rennes_metropole_transport;
+    });
+
+    delete testCase.familles._.adpa;
+    delete testCase.familles._.loiret_apa;
+    delete testCase.familles._.parisien;
+    delete testCase.familles._.paris_complement_sante;
+    delete testCase.familles._.paris_energie_famille;
+    delete testCase.familles._.paris_forfait_famille;
+    delete testCase.familles._.paris_logement;
+    delete testCase.familles._.paris_logement_aspeh;
+    delete testCase.familles._.paris_logement_familles;
+    delete testCase.familles._.paris_logement_plfm;
+    delete testCase.familles._.paris_logement_psol;
+
     return testCase;
 };
