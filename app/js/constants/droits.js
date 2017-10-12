@@ -274,7 +274,8 @@ var droitsDescription = {
                             provider: {
                                 imgSrc: 'LyonPOC.png',
                             },
-                            instructions: 'https://www.grandlyon.com/fileadmin/user_upload/media/pdf/pa-ph/personnes-agees/20170802_dossier_demande_apa.pdf',
+                            instructions: undefined, // Prevent default form recycling
+                            form: 'https://www.grandlyon.com/fileadmin/user_upload/media/pdf/pa-ph/personnes-agees/20170802_dossier_demande_apa.pdf',
                             link: 'https://www.grandlyon.com/services/allocation-personnalisee-d-autonomie.html',
                         },
                     }
