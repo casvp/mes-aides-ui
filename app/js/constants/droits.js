@@ -270,7 +270,7 @@ var droitsDescription = {
                             instructions: 'https://apa.paris.fr/portailAPA/',
                             link: 'https://www.paris.fr/aides_soutien_a_domicile#allocation-personnalisee-d-autonomie-a-domicile-apa_21',
                         },
-                        'D69-LYON': {
+                        'M69-LYON': {
                             provider: {
                                 imgSrc: 'LyonPOC.png',
                             },
