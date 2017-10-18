@@ -272,7 +272,7 @@ var droitsDescription = {
                         },
                         'M69-LYON': {
                             provider: {
-                                imgSrc: 'LyonPOC.png',
+                                imgSrc: 'logo_grand_lyon.png',
                             },
                             instructions: undefined, // Prevent default form recycling
                             form: 'https://www.grandlyon.com/fileadmin/user_upload/media/pdf/pa-ph/personnes-agees/20170802_dossier_demande_apa.pdf',
