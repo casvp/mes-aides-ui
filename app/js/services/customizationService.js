@@ -10,7 +10,7 @@ angular.module('ddsCommon').factory('CustomizationService', function() {
             if (testCase.menages[0].depcom[currentPeriod].match(/^75/))
                 return 'D75-PARIS';
             if (testCase.menages[0].depcom[currentPeriod].match(/^69/))
-                return 'M69-LYON';	
+                return 'M69-LYON';
         }
 
         return undefined;
